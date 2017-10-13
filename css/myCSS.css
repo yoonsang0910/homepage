@@ -13,7 +13,7 @@
     width: 1680px;
     height: 4500px;
     /*    height: 100%;*/
-    background-color: black;
+/*    background-color: black;*/
 }
 
 #sidebar {
@@ -43,7 +43,7 @@
     margin-left: 370px;
     padding-left: 20px;
     background-color: white;
-    background-color: #7dd;
+/*    background-color: #7dd;*/
     /*            border: 20px solid black;*/
 }
 
@@ -54,7 +54,7 @@
     width: 1500px;
     height: 100px;
     /*    margin: 10px;*/
-    background-color: red;
+    background-color: white;
 }
 
 .fontBig {
