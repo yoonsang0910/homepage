@@ -3,63 +3,163 @@
 
 <head>
     <link rel="canonical" href="https://yoonsangkim.info/">
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500|Muli:400,600,700,800|Montserrat:500,600" rel="stylesheet">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500|Muli:400,600,700,800|Montserrat:500,600" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Average+Sans|Open+Sans|Oswald|PT+Sans+Narrow" rel="stylesheet">
+
+
     <link rel="stylesheet" type="text/css" href="./css/myCSS.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--
-        <script type="text/javascript">
-            var host = "yoonsangkim.info";
-            if ((host == window.location.host) && (window.location.protocol != "https:"))
-                window.location.protocol = "https";
-        </script>
-        -->
-    <title>day5</title>
+    <title>final</title>
     <style>
 
 
     </style>
+    <!--
+      CSS error for under IE9  
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="sidebar">
-            <div class="fontNormal">
-                <div style="position: absolute; top: 0; left: 0; width: 370px; height: 50px;background-color: #DFDFDF;">
-                    <div style="margin-top: 5px; text-align: right; padding-right: 10px;font-family: 'Cabin', sans-serif; font-size:12px">Recent update : 11/12/2017</div>
-<!--
-                    <div style="margin-top: 30px; padding-left: 30px;font-family: 'Cabin', sans-serif; font-weight: 500;font-size:40px">Yoonsang Kim</div>
-                    <div style="margin-top: 17px; padding-left: 47px;font-family: 'Cabin', sans-serif; font-size:15px">Computer Science &amp; Engineering</div>
--->
+    <div id="header">
+        <div id="update">
+            Recent update : Nov. 28. 2017. [KST]
+        </div>
+        <div>
+            <ul>
+                <li class="currentMenu" data-type="about"><a class="menu">About</a></li>
+                <li class="" data-type="research"><a class="menu">Research</a></li>
+                <li class="" data-type="awards"><a class="menu">Awards</a></li>
+                <li class="" data-type="activities"><a class="menu"> Activities</a></li>
+                <li class="" data-type="contact"><a class="menu">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content-outer">
+        <div id="content-inner">
+            <!-- About menu tab -->
+            <div id="about" class="content-hide currentMenu">
+                <div class="content-article">
+                    <div style="width: 400px" class="content-picture">
+                        <img src="img./profile_pic.jpg" alt="profile_pic" style="width:auto; height:auto">
+                    </div>
+                    <div style="float: left">
+                        <span class="large-title">Yoonsang Kim</span>
+                        <p style="margin-left: 10px">
+                            <strong>B.S. in Engineering</strong><br> Computer Science<br> Soongsil University,&nbsp;&nbsp;South Korea<br> yoonsang0910@gmail.com
+                        </p>
+                        <h6>&nbsp;</h6>
+                        <p style="margin-left: 10px">
+                            <strong>Curriculum Vitae<a href="./file/CV_test.pdf" download="CV_YoonsangKim"> [pdf]</a></strong>
+                            <!--                <a href="mailto:yoonsang0910@gmail.com">-->
+                        </p>
+                    </div>
                 </div>
-                <div style="position: absolute; top: 50px; left: 0; width: 370px; height: 100%;padding-left: 40px; margin-top: 20px">
-                    <div class="sidebartab">
-                        <a href="https://yoonsangkim.info">CV</a>
+                About tab
+            </div>
+
+
+            <!-- Research menu tab -->
+            <div id="research" class="content-hide">
+                <div class="content-article">
+                    <div style="width: 400px" class="content-picture">
+                        <img src="img./profile_pic.jpg" alt="profile_pic" style="width:auto; height:auto">
                     </div>
-                    <div class="sidebartab">
-                        <a href="https://yoonsangkim.info">Research</a>
-                    </div>
-                    <div class="sidebartab">
-                        <a href="https://yoonsangkim.info">Awards</a>
-                    </div>
-                    <div class="sidebartab">
-                        <a href="https://yoonsangkim.info">Extracurricular Activities</a>
+                    <div style="float: left">
+                        <span class="large-title">Yoonsang Kim</span>
+                        <p style="margin-left: 10px">
+                            <strong>B.S. in Engineering</strong><br> Computer Science<br> Soongsil University,&nbsp;&nbsp;South Korea<br> yoonsang0910@gmail.com
+                        </p>
+                        <h6>&nbsp;</h6>
+                        <p style="margin-left: 10px">
+                            <strong>Curriculum Vitae<a href="./file/CV_test.pdf" download="CV_YoonsangKim"> [pdf]</a></strong>
+                            <!--                <a href="mailto:yoonsang0910@gmail.com">-->
+                        </p>
                     </div>
                 </div>
+                Research tab
+            </div>
+            
+            
+            <!-- Awards menu tab -->
+            <div id="awards" class="content-hide">
+                <div class="content-article">
+                    <div style="width: 400px" class="content-picture">
+                        <img src="img./profile_pic.jpg" alt="profile_pic" style="width:auto; height:auto">
+                    </div>
+                    <div style="float: left">
+                        <span class="large-title">Yoonsang Kim</span>
+                        <p style="margin-left: 10px">
+                            <strong>B.S. in Engineering</strong><br> Computer Science<br> Soongsil University,&nbsp;&nbsp;South Korea<br> yoonsang0910@gmail.com
+                        </p>
+                        <h6>&nbsp;</h6>
+                        <p style="margin-left: 10px">
+                            <strong>Curriculum Vitae<a href="./file/CV_test.pdf" download="CV_YoonsangKim"> [pdf]</a></strong>
+                            <!--                <a href="mailto:yoonsang0910@gmail.com">-->
+                        </p>
+                    </div>
+                </div>
+                Awards tab
+            </div>
+            
+            
+            <!-- Activities menu tab -->
+            <div id="activities" class="content-hide">
+                <div class="content-article">
+                    <div style="width: 400px" class="content-picture">
+                        <img src="img./profile_pic.jpg" alt="profile_pic" style="width:auto; height:auto">
+                    </div>
+                    <div style="float: left">
+                        <span class="large-title">Yoonsang Kim</span>
+                        <p style="margin-left: 10px">
+                            <strong>B.S. in Engineering</strong><br> Computer Science<br> Soongsil University,&nbsp;&nbsp;South Korea<br> yoonsang0910@gmail.com
+                        </p>
+                        <h6>&nbsp;</h6>
+                        <p style="margin-left: 10px">
+                            <strong>Curriculum Vitae<a href="./file/CV_test.pdf" download="CV_YoonsangKim"> [pdf]</a></strong>
+                            <!--                <a href="mailto:yoonsang0910@gmail.com">-->
+                        </p>
+                    </div>
+                </div>
+                Activities tab
+            </div>
+            
+            
+            <!-- Contact menu tab -->
+            <div id="contact" class="content-hide">
+                <div class="content-article">
+                    <div style="width: 400px" class="content-picture">
+                        <img src="img./profile_pic.jpg" alt="profile_pic" style="width:auto; height:auto">
+                    </div>
+                    <div style="float: left">
+                        <span class="large-title">Yoonsang Kim</span>
+                        <p style="margin-left: 10px">
+                            <strong>B.S. in Engineering</strong><br> Computer Science<br> Soongsil University,&nbsp;&nbsp;South Korea<br> yoonsang0910@gmail.com
+                        </p>
+                        <h6>&nbsp;</h6>
+                        <p style="margin-left: 10px">
+                            <strong>Curriculum Vitae<a href="./file/CV_test.pdf" download="CV_YoonsangKim"> [pdf]</a></strong>
+                            <!--                <a href="mailto:yoonsang0910@gmail.com">-->
+                        </p>
+                    </div>
+                </div>
+                Contact tab
             </div>
         </div>
-        <div id="content">
-            <h2 class="fontBig"><span style="color: red">Website under maintenance</span></h2>
-            
-        </div>
-<!--
-        <div id="footer ">
-            fdfdfd
-            <h3>footer test</h3>
-        </div>
--->
     </div>
+    <script>
+        $('#header ul li').click(function() {
+            var tab_id = $(this).attr('data-type');
+            $('#header ul li').removeClass('currentMenu');
+            $('.content-hide').removeClass('currentMenu');
+            $(this).addClass('currentMenu');
+            $("#" + tab_id).addClass('currentMenu');
+        })
+
+    </script>
 </body>
 
 </html>

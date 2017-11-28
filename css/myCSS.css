@@ -1,215 +1,204 @@
+
+
 /*
-        html,
-        body {
-            max-width: 100%;
-            overflow-x: hidden;
-        }
+font-family: 'Oswald', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Average Sans', sans-serif;
+font-family: 'Encode Sans Semi Condensed', sans-serif;
+font-family: 'Open Sans', sans-serif;
 */
 
-#wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1680px;
-    height: 4500px;
-    /*    height: 100%;*/
-    /*    background-color: black;*/
-}
-
-#sidebar {
-    position: fixed;
-    width: 350px;
+html body {
+    width: 100%;
     height: 100%;
-    padding-left: 20px;
-    background-color: #EFEFEF;
-    
-/*        #FFC31E;*/
-    /*        #FFB914;*/
-    /*        #FFB900;*/
-    /*    #F9AD05*/
-    /*                        #d66*/
+/*  나중에 outter-content 절대길이구해지면 그거보다 조금 길게해서 footer 넣으면 될듯, 그냥 넣어도 될듯하고.,,  */
+    margin: 0;
+    padding: 0;
+    background-color: brown;
 }
 
-.sidebartab {
-    width: 320px;
-    height: 25px;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-bottom: 10px;
-    float: left;
-    /*                        border: 1px solid black;*/
-}
-
-#content {
-    position: absolute;
-    width: 1480px;
-/*    height: 4450px;*/
-        height: 100%;
-    margin-left: 370px;
-    padding-left: 20px;
-    background-color: white;
-/*        background-color: #7dd;*/
-    /*            border: 20px solid black;*/
-}
-
-#content-area {
-    /*    margin-left: 150px;*/
-    padding-left: 100px;
-    padding-top: 50px;
-    /*    background-color: white;*/
-/*    background-color: white;*/
-/*            background-color: #7dd;*/
-    /*            border: 20px solid black;*/
-}
-
-#footer {
-    position: absolute;
-    bottom: 0px;
-    left: 370px;
-    width: 1500px;
-    height: 100px;
-    /*    margin: 10px;*/
-    background-color: white;
-/*    background-color: black;*/
-}
-
-.fontBig {
-    font-family: 'Muli', sans-serif;
-    /*    font-family: 'Montserrat', sans-serif;*/
-    font-size: 45px;
-    line-height: 14px;
-    letter-spacing: 0.8px;
-    font-weight: 700;
-    color: #303030;
-}
-
-.fontBig-normaltitle {
-    font-family: 'Muli', sans-serif;
-    /*    font-family: 'Montserrat', sans-serif;*/
-    font-size: 35px;
-    line-height: 14px;
-    letter-spacing: 0.8px;
-    font-weight: 700;
-    color: #303030;
-    margin-bottom: 40px;
-}
-
-.fontBig-smalltitle {
-    font-family: 'Muli', sans-serif;
-    font-size: 25px;
-    line-height: 14px;
-    letter-spacing: 0.8px;
-    font-weight: 700;
-    /*    color: #303030;*/
-    color: #505050;
-    margin-bottom: 100px;
-}
-
-.font-title-discription {
-    font-family: 'Muli', sans-serif;
-    font-size: 20px;
-    line-height: 22px;
-    letter-spacing: 0.8px;
-    font-weight: 700;
-    color: #8C8C8C;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-
-.fontNormal {
-    font-family: 'Cabin', sans-serif;
-    /*    font-family: 'Cabin', sans-serif;*/
-    /*    font-family: 'Montserrat', sans-serif;*/
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 0.8px;
-    color: #484848;
-}
-
-.fontNormal-content {
-    font-family: 'Muli', sans-serif;
-    /*    font-family: 'Cabin', sans-serif;*/
-    /*    font-family: 'Montserrat', sans-serif;*/
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 0.8px;
-    color: #484848;
-}
-
-.fontSmall {
-    /*            font-family: sans-serif;*/
-    /*            font-family: 'Cabin', sans-serif;*/
-    /*    font-family: 'Montserrat', sans-serif;*/
-    font-family: 'Muli', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.8px;
-    font-weight: 400;
-    color: #484848;
-}
-
-.content-rule1 {
-
-    margin-top: 125px;
-    margin-bottom: 125px;
-/*        background-color: aquam arine;*/
-}
-
-
-p.p-rule1 {
-    text-indent: 1em;
-    word-wrap: break-word;
-    margin-right: 50px;
-}
-
-p.p-rule2 {
-    word-wrap: break-word;
-    margin-right: 50px;
+#header, .menu, #header ul, #header ul li{
+    margin: 0;
+    padding: 0;
 }
 
 ul {
-    margin-bottom: 50px;
-    color: #484848;
+    list-style-type: square;
 }
 
-li {
-    font-size: 20px;
-    margin-top: 25px;
-    margin-left: 20px;
-    margin-bottom: 15px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #484848;
-}
 
-img {
-    border-color: transparent;
-/*    border-radius: 15px;*/
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: block;
-}
-
-a:link {
+a:active, a:visited, a:link {
     text-decoration: none;
-    color: #484848;
-}
-
-a:visited {
-    text-decoration: none;
-    color: #484848;
-}
-
-a:active {
-    text-decoration: none;
-    color: #484848;
+    color: burlywood;
 }
 
 a:hover {
-    text-decoration: none;
-    /*    color: white;*/
-    /*    color: burlywood;*/
-    /*    color: burlywood;*/
-    /*    color: burlywood;*/
-    color: lightgrey;
+     color: #64533D; 
 }
+
+
+
+#header {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    background-color: #202020;
+    color: #EDEEEF;
+    font-family: 'Average Sans', sans-serif;
+    /*    color: #FFFAF7;*/
+}
+
+#header #update {
+    margin-top: 48px; 
+    margin-left: 10px; 
+    float: left;
+    font-size: 12px;
+    font-family: inherit;
+}
+
+#header ul {
+    float: right;
+    margin-right: 50px;
+}
+
+#header ul li {
+    list-style: none;
+    float: left;
+    line-height: 70px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#header .menu {
+    text-decoration: none; 
+    color: inherit;
+    display: block;
+    width: 150px;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+#header .menu:hover {
+    color: burlywood;
+}
+
+/* 선택 됐을때 선택 된 탭에 색깔 */
+#header ul li.currentMenu {
+/*    background-color: #151515;*/
+    background-color: black;
+}
+
+
+
+#content-outer {
+    height: 1600px;
+/*    height: 100%;*/
+    padding-left: 300px;
+    padding-right: 300px;
+    background-color: cadetblue;
+}
+
+#content-inner {
+    padding: 100px 50px 100px 50px;
+/*    background-color: #F9F9F9; */
+    background-color: white;
+}
+
+
+.content-hide {
+    display: none;
+}
+
+.content-hide.currentMenu {
+    display: block;
+}
+
+/* Per paragraph */
+.content-article {
+    padding: 30px;
+    height: auto;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.content-picture {
+    float: left;
+    padding: 30px;
+}
+
+
+.large-title {
+    font-size: 65px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.med-title {
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+}
+.small-title {
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* A horizontal line */
+h6 {
+    border: none;
+    border-bottom: 1px solid #203030; 
+    clear: both; 
+    height: 0; 
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
