@@ -8,9 +8,33 @@ font-family: 'Encode Sans Semi Condensed', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
 
+
+
+
+
+
+/* A horizontal line */
+/*
+h6 {
+    border-bottom: 1px solid #203030; 
+    clear: both; 
+    height: 0; 
+    width: 100%;
+}
+*/
+
+
+
 html body {
+    
+/* 고정 폭으로 하면 반응형으로 안되는 대신 균등하게 폰에서도 줄여져서 나오는듯 */
     width: 100%;
     height: 100%;
+    
+/*
+    width: 1500px;
+    height: 800px;
+*/
 /*  나중에 outter-content 절대길이구해지면 그거보다 조금 길게해서 footer 넣으면 될듯, 그냥 넣어도 될듯하고.,,  */
     margin: 0;
     padding: 0;
@@ -22,20 +46,41 @@ html body {
     padding: 0;
 }
 
-ul {
-    list-style-type: square;
-}
-
-
 a:active, a:visited, a:link {
     text-decoration: none;
-    color: burlywood;
+    color: inherit;
 }
 
 a:hover {
-     color: #64533D; 
+     color: #A4533D; 
 }
 
+/*
+i {
+    color: #A4533D;
+    color: #505050;
+    color: #C9A77A;
+}
+*/
+
+.content-body-detail {
+    padding-top: 15px;
+    padding-left: 5px;
+    color: #C9A77A;
+}
+
+.content-body-detail-description {
+    padding-top: 5px;
+    padding-left: 5px;
+    color: darkgray;
+}
+
+
+#topbtn {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+}
 
 
 #header {
@@ -89,14 +134,15 @@ a:hover {
     background-color: black;
 }
 
-
-
 #content-outer {
-    height: 1600px;
+    height: 4500px;
 /*    height: 100%;*/
     padding-left: 300px;
     padding-right: 300px;
-    background-color: cadetblue;
+/*    background-color: cadetblue;*/
+    background-color: darkseagreen;
+    
+    29AF48
 }
 
 #content-inner {
@@ -121,6 +167,7 @@ a:hover {
     overflow: hidden;
     font-size: 20px;
     font-family: 'PT Sans Narrow', sans-serif;
+/*    background-color: aquamarine;*/
 }
 
 .content-picture {
@@ -128,32 +175,42 @@ a:hover {
     padding: 30px;
 }
 
+.content-body {
+    margin: 0 0 20px 15px;
+    font-family: inherit;
+    clear: both;
+}
 
 .large-title {
-    font-size: 65px;
+    font-size: 64px;
     font-family: 'Oswald', sans-serif;
 }
 
 .med-title {
-    font-size: 45px;
+    font-size: 34px;
     font-family: 'Oswald', sans-serif;
+    border-bottom: 1px solid #BEBEBE;
+    margin-bottom: 20px;
 }
+
 .small-title {
-    font-size: 35px;
+    font-size: 24px;
+    margin: 0 0 15px 5px;
     font-family: 'Oswald', sans-serif;
+    display: block;
+    float:left;
 }
 
-
-/* A horizontal line */
-h6 {
-    border: none;
-    border-bottom: 1px solid #203030; 
-    clear: both; 
-    height: 0; 
-    width: 100%;
+.title-description {
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #A0A0A0;
+    color: #FFFAF7;
+    font-size: 18px;
+    padding: 5px;
+    float:  right;
 }
-
-
 
 
 
