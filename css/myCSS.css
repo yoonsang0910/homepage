@@ -97,13 +97,13 @@ i {
     width: 100%;
     height: 70px;
     overflow: hidden;
-    background-color: darkseagreen;
+/*    background-color: darkseagreen;*/
     color: #EDEEEF;
     font-family: 'Average Sans', sans-serif;
 }
 
 #header #update {
-    position:fixed;
+    position: relative;
     top: 50px; 
     left: 305px;
     z-index: 1;
@@ -124,6 +124,7 @@ i {
     text-align: center;
     position: relative;
     z-index: 2;
+    background-color: darkseagreen;
 }
 
 #header .menu {
