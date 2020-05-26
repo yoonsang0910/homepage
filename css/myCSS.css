@@ -124,7 +124,7 @@ i {
     text-align: center;
     position: relative;
     z-index: 2;
-    background-color: darkseagreen;
+    background-color: #95A5A6; /*darkseagreen;*/
 }
 
 #header .menu {
@@ -153,7 +153,7 @@ i {
     padding-left: 300px;
     padding-right: 300px;
 /*    background-color: cadetblue;*/
-    background-color: darkseagreen;
+    background-color: #95A5A6; /*darkseagreen;*/
     
 /*    29AF48*/
 }
