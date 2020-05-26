@@ -41,7 +41,7 @@ html body {
 /*  나중에 outter-content 절대길이구해지면 그거보다 조금 길게해서 footer 넣으면 될듯, 그냥 넣어도 될듯하고.,,  */
     margin: 0;
     padding: 0;
-    background-color: darkseagreen;
+    background-color: #95A5A6;/*darkseagreen;*/
 }
 
 #header, .menu, #header ul, #header ul li{
